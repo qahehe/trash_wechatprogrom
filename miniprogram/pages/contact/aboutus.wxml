@@ -1,0 +1,9 @@
+<!--miniprogram/pages/contact/aboutus.wxml-->
+<view>
+  <view>
+    <image src="/images/qrchen.png"></image>
+  </view>
+  <view>邮箱地址:{{address}}</view>
+    <view>微信号：{{number}}</view>
+    <view>有问题请咨询上述联系人</view>
+</view>

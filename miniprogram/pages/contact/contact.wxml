@@ -1,0 +1,12 @@
+<view>
+  <view>
+  <button class="share index" openType="share" style="display: block;">
+      <image src="/images/share.png"></image>
+      <text>分享</text>
+  </button>
+  <button class="btn1" bindtap="onaboutus">
+      <image class='btnImg' src="/images/share.png"></image>
+      <text>联系我们</text>
+  </button>
+  </view>
+</view>

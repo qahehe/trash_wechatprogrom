@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/ai/index",
+    "pages/ai/search",
+    "pages/ai/camera/camera",
+    "pages/result/list",
+    "pages/result/commit",
+    "pages/test/test",
+    "pages/index/index",
+    "pages/ai/filter/filter",
+    "pages/contact/contact",
+    "pages/contact/aboutus"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "智能垃圾分类",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#BEBEBE",
+    "selectedColor": "#169AF6",
+    "list": [
+      {
+        "pagePath": "pages/ai/index",
+        "text": "识别",
+        "iconPath": "images/camera.png",
+        "selectedIconPath": "images/camera-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "指南",
+        "iconPath": "images/menu.png",
+        "selectedIconPath": "images/menu-activate.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测试",
+        "iconPath": "images/test.png",
+        "selectedIconPath": "images/test-activate.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "设置",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

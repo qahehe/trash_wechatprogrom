@@ -1,0 +1,64 @@
+.share,.cs {
+  position: fixed;
+  right: 20rpx;
+  bottom: 100rpx;
+  width: 150rpx;
+  height: 60rpx;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.1);
+  z-index: 1501;
+}
+.cs {
+  bottom: 20rpx;
+}
+.share.index {
+  top: 220rpx;
+}
+.cs.index {
+  top: 290rpx;
+}
+.share::after,.cs::after {
+  border: none;
+}
+.share image,.cs image {
+  position: absolute;
+  left: 25rpx;
+  top: 15rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.share text,.cs text {
+  position: absolute;
+  left: 65rpx;
+  top: 0rpx;
+  line-height: 60rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
+}
