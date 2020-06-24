@@ -217,9 +217,9 @@ image {
     display: block;
     vertical-align: top;
     margin: 0px auto;
-    width: 360rpx;
-    height: 360rpx;
-    border-radius: 5px;
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 10px;
 }
 
 .cat-intro {

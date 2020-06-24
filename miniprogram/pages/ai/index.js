@@ -16,7 +16,7 @@ Page({
       broadcast: "/images/broadcast.png"
     },
     tipInfo: n.tipInfo,
-    city: "guangzhou",
+    city: "shanghai",
 
     //从相册导入的url
     tempFilePaths: '',

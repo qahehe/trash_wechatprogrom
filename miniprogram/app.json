@@ -9,7 +9,9 @@
     "pages/index/index",
     "pages/ai/filter/filter",
     "pages/contact/contact",
-    "pages/contact/aboutus"
+    "pages/contact/aboutus",
+    "pages/contact/updatelog/updatelog",
+    "pages/contact/handin/handin"
   ],
   "window": {
     "backgroundColor": "#FFFFFF",
@@ -42,9 +44,9 @@
       },
       {
         "pagePath": "pages/contact/contact",
-        "text": "设置",
-        "iconPath": "images/setting.png",
-        "selectedIconPath": "images/setting-active.png"
+        "text": "更多",
+        "iconPath": "images/check.png",
+        "selectedIconPath": "images/check-active.png"
       }
     ]
   },

@@ -23,7 +23,7 @@
   </view>
 </view>
 
-<button class="share index" openType="share" style="display: block;">
+<button class="share index" openType="share">
     <image src="/images/share.png"></image>
     <text>分享</text>
 </button>
@@ -46,12 +46,6 @@
     </radio-group>
   </view>
 </view>
-
-
-<!--<button class="cs index" bindtap="showZsm">
-    <image src="/images/qr_b.png"></image>
-    <text>打赏</text>
-</button> -->
 
 <view bindtap="closeOverlay" id="overlay" style="display: {{showChooseCity?'block':'none'}};"></view>
 <view id="chooseCity" style="display: {{showChooseCity?'block':'none'}};">
