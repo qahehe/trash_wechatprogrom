@@ -127,40 +127,16 @@ Page({
       url: 'search',
     })
   },
-  onBindCamera: function() {
-    wx.getSetting({
-      success(res) {
-        console.log(res);
-        if (!res.authSetting['scope.camera']) {
-          wx.authorize({
-            scope: 'scope.camera',
-            success() {
-              // 用户已经同意小程序使用录音功能，后续调用 wx.startRecord 接口不会弹窗询问
-              wx.navigateTo({
-                url: 'camera/camera',
-              })
-            }
-          })
-        } else {
-          wx.navigateTo({
-            url: 'camera/camera',
-          })
-        }
-      }
-    })
-  },
-  //从相册导入代码
-  onBindAlbum:function(){
+
+  //拍照识别
+  onBindCamera:function(){
     var _this = this;  
     wx.chooseImage({  
       count: 1, // 默认9  
       sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有  
-      sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有  
+      sourceType: ['camera'], // 可以指定来源是相册还是相机，默认二者都有  
       success: function (res) {  
         // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片  
-        /*this.setData({  
-          tempFilePath:res.tempFilePaths[0]
-        }) */
         wx.getFileSystemManager().readFile({
           filePath:res.tempFilePaths[0],
           encoding:"base64",
@@ -172,6 +148,33 @@ Page({
             wx.hideLoading()
             wx.showToast({
               title: '拍照失败,未获取相机权限或其他原因',
+              icon:"none"
+            })
+          }
+        })
+      }  
+    }) 
+  },
+  //从相册导入代码
+  onBindAlbum:function(){
+    var _this = this;  
+    wx.chooseImage({  
+      count: 1, // 默认9  
+      sizeType: ['original', 'compressed'], // 可以指定是原图还是压缩图，默认二者都有  
+      sourceType: ['album'], // 可以指定来源是相册还是相机，默认二者都有  
+      success: function (res) {  
+        // 返回选定照片的本地文件路径列表，tempFilePath可以作为img标签的src属性显示图片  
+        wx.getFileSystemManager().readFile({
+          filePath:res.tempFilePaths[0],
+          encoding:"base64",
+          success: res => {
+            console.log(res.data)
+            _this.req(_this.data.accessToken,res.data)
+          },
+          fail:res=>{
+            wx.hideLoading()
+            wx.showToast({
+              title: '获取相册失败,未获取相册权限或其他原因',
               icon:"none"
             })
           }
