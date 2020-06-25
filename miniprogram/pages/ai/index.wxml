@@ -12,7 +12,7 @@
     </view>
 </view>
 <view class='ai-view'>
-  <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindCamera' />
+  <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindAlbum' />
   <text class='tip'>图片识别</text>
 <!-- 从相册导入的xml代码，可修改-->
 

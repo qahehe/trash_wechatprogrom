@@ -2,7 +2,7 @@
 <view id="wrapper">
     <view id="quizzes">
         <view class="quiz{{currentQ===quizIndex?' active':currentQ>quizIndex?' out':' in'}}" wx:for="{{quizzes}}" wx:for-index="quizIndex" wx:for-item="quiz">
-            <view class="quiz-index" style="margin-top:10px;">{{quizIndex<9?'0'+(quizIndex+1):quizIndex+1}} <text>/ {{totalQuizzes}}</text>
+            <view class="quiz-index" style="text-align:center;margin-top:10px;">{{quizIndex<9?'0'+(quizIndex+1):quizIndex+1}} <text>/ {{totalQuizzes}}</text>
             </view>
             <text class="quiz-q" src="{{quiz.q}}">{{quiz.n}}</text>
             <view class="quiz-options">
