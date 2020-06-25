@@ -1,1 +1,20 @@
 /* miniprogram/pages/contact/aboutus.wxss */
+.texttitle {
+  font-size: 60rpx;
+  text-align: center;
+}
+.imagesize{
+  display:flex;             
+  justify-content: center;        
+  align-items: center;
+  margin-left: 100rpx;
+  margin-right: 50rpx;
+  width:530rpx;
+  height:450rpx;
+ }
+
+.text{
+  font-size: 40rpx;
+  text-align: center;
+  color: darkblue;
+}

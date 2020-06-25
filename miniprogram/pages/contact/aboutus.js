@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-      address:"xxxxx@qq.com",
+      address:"460674682@qq.com",
       number:"wechatnumber"
   },
 
