@@ -1,9 +1,13 @@
 /*contact.wxss*/
+page{
+  background:#F6F6F6
+}
+
 .btn1 {
   width: 80%;
   margin-top: 250rpx;
-  background-color: burlywood;
-  color: white;
+  background-color:#FFFFFF;
+  color: rgb(0, 0, 0);
   border-radius: 98rpx;
   display: flex;
   flex-direction: row;
@@ -26,8 +30,8 @@
 .btn2 {
   width: 80%;
   margin-top: 40rpx;
-  background-color: blue;
-  color: white;
+  background-color: #FFFFFF;
+  color:#000000;
   border-radius: 98rpx;
   display: flex;
   flex-direction: row;
@@ -42,7 +46,7 @@
 .btn3 {
   width: 80%;
   margin-top: 40rpx;
-  background-color: rgb(255, 61, 2);
+  background-color:#F08080;
   color: white;
   border-radius: 98rpx;
   display: flex;
@@ -58,7 +62,7 @@
 .btn4 {
   width: 80%;
   margin-top: 40rpx;
-  background-color: rgb(10, 241, 10);
+  background-color: #40E0D0;
   color: white;
   border-radius: 98rpx;
   display: flex;

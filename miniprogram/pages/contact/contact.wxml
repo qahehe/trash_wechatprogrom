@@ -5,27 +5,27 @@
       <text>分享</text>
   </button>
 -->
-  <button class="btn1" bindtap="onaboutus">
-      <image class='btnImg' src="/images/share.png"></image>
-      <text>联系我们</text>
+  <button class="btn1" bindtap="onupload">
+      <image class='btnImg' src="/images/upload.png"></image>
+      <text>手动上传</text>
   </button>
   </view>
   <view>
     <button class="btn2" open-type="feedback">
-      <image class='btnImg' src="/images/share.png"></image>
+      <image class='btnImg' src="/images/question.png"></image>
       <text>问题反馈</text>
     </button>
   </view>
   <view>
-    <button class="btn3" bindtap="onmorelog">
-      <image class='btnImg' src="/images/share.png"></image>
+    <button class="btn2" bindtap="onmorelog">
+      <image class='btnImg' src="/images/log.png"></image>
       <text>更新日志</text>
     </button>
   </view>
   <view>
-    <button class="btn4" bindtap="onupload">
-      <image class='btnImg' src="/images/share.png"></image>
-      <text>手动上传</text>
-    </button>
+    <button class="btn2" bindtap="onaboutus">
+      <image class='btnImg' src="/images/contact.png"></image>
+      <text>联系我们</text>
+     </button>
   </view>
 </view>

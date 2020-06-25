@@ -1,5 +1,5 @@
 page {
-  background-image: url("https://6465-dev-oto5o-1257020492.tcb.qcloud.la/index_bg.jpg");
+  background-image: url("https://742d-t-5dlan-1302066156.tcb.qcloud.la/index_bg.jpg?sign=aa9a2277f5c132d69508527bb2bf5d24&t=1592989552");
   /* background-size: cover; */
   background-size: 100% 100%;
 }
@@ -209,7 +209,7 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 250rpx;
+  margin-top: 150rpx;
 }
 .txt{
   font-size: 36rpx;
@@ -218,13 +218,13 @@ page {
 }
 .tip{
   font-size: 22rpx;
-  color: #00cc77;
+  color: #000000;
   margin-top: 20rpx;
 }
 .ai-paizhao{
-  width: 200rpx;
-  height: 200rpx;
-  margin-top: 80rpx;
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: 50rpx;
 }
 .float-view{
   position:absolute;

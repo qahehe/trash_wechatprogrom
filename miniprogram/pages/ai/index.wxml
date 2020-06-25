@@ -13,21 +13,9 @@
 </view>
 <view class='ai-view'>
   <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindCamera' />
-  <text class='tip'>自动识别</text>
-
-</view>
-<view class="box" wx:if="{{SHOW_TOP}}">
-  <view class='arrow'></view>
-  <view class='body' bindtap='showModal'>
-    <text>点击「添加到我的小程序」</text>
-  </view>
-</view>
-
-<button class="share index" openType="share">
-    <image src="/images/share.png"></image>
-    <text>分享</text>
-</button>
+  <text class='tip'>图片识别</text>
 <!-- 从相册导入的xml代码，可修改-->
+
 <button class="cs index"  bindtap="onBindAlbum">
     <image src="/images/camera-active.png"></image>
     <text>从相册导入</text>
@@ -46,6 +34,20 @@
     </radio-group>
   </view>
 </view>
+
+</view>
+<view class="box" wx:if="{{SHOW_TOP}}">
+  <view class='arrow'></view>
+  <view class='body' bindtap='showModal'>
+    <text>点击「添加到我的小程序」</text>
+  </view>
+</view>
+
+<button class="share index" openType="share">
+    <image src="/images/share.png"></image>
+    <text>分享</text>
+</button>
+
 
 <view bindtap="closeOverlay" id="overlay" style="display: {{showChooseCity?'block':'none'}};"></view>
 <view id="chooseCity" style="display: {{showChooseCity?'block':'none'}};">
