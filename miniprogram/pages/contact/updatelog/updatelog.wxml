@@ -14,24 +14,23 @@
     <view class="log-list">
       <view class="describe">
         <view class="desc-title">
-          <text class="desc-v">v1.0.0 公测版</text>
-          <text class="desc-time">2020.6.20</text>
+          <text class="desc-v">v2.0.0 公测版</text>
+          <text class="desc-time">2020.6.28</text>
         </view>
         <text class="desc-content">修复BUG</text>
         <view class="desc-list">
-          <text class="desc-list-item">修复我的收藏，我的发起，界面不能加入与收藏活动</text>
-          <text class="desc-list-item">修复模板消息问题</text>
+          <text class="desc-list-item">修复问题反馈，联系我们等更多相关功能</text>
+          <text class="desc-list-item">修改各种UI格式和图片资源优化</text>
         </view>
         <text class="desc-content">优化完善</text>
         <view class="desc-list">
-          <text class="desc-list-item">添加发起修改功能，联系方式修改功能</text>
-          <text class="desc-list-item">添加发起群二维码上传，显示功能</text>
-          <text class="desc-list-item">添加发起者与加入者联系信息可以点击复制功能</text>
-          <text class="desc-list-item">优化了微信号，手机号，QQ号以及真实姓名的校验</text>
-          <text class="desc-list-item">添加修改发起状态功能</text>
-          <text class="desc-list-item">添加发起撤离首页和公开发起功能</text>
-          <text class="desc-list-item">删除点赞与取消赞的提示消息，换成动画效果</text>
-          <text class="desc-list-item">优化动态消息提示机制</text>
+          <text class="desc-list-item">添加手动上传垃圾名称功能，修改开发者联系方式</text>
+          <text class="desc-list-item">添加分享小程序功能</text>
+          <text class="desc-list-item">添加图像识别（从相机和相册）功能</text>
+          <text class="desc-list-item">添加垃圾分类测试功能</text>
+          <text class="desc-list-item">紧跟政策，修改指南中的数据定义和相关资料，添加点击指南对应图片查看对应垃圾数据的功能</text>
+          <text class="desc-list-item">删除冗余数据，保持数据清晰可信</text>
+          <text class="desc-list-item">优化数据库检索机制和搜索功能</text>
         </view>
       </view>
     <view class="footer">

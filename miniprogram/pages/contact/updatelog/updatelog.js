@@ -15,7 +15,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-            version: "V1.0.0",
+            version: "V2.0.0",
             year: new Date().getFullYear()
           });
   },

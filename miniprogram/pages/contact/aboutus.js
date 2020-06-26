@@ -6,7 +6,7 @@ Page({
    */
   data: {
       address:"460674682@qq.com",
-      number:"wechatnumber"
+      number:"z445364615@gmail.com"
   },
 
   /**

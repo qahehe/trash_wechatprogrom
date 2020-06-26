@@ -277,34 +277,14 @@ button::after {
     opacity: 1;
 }
 
-#actions {
-    position: relative;
-    padding: 10rpx 40rpx 20rpx;
-    overflow: hidden;
+#testBottom {
+    position: absolute;
+    left: 0rpx;
+    bottom: 0rpx;
+    width: 100%;
+    z-index: 200;
 }
 
-#restartTest,#testFriends {
-    float: left;
-    padding: 0rpx;
-    width: 50%;
-    background-color: transparent;
-    text-align: center;
-}
-
-#restartTest image,#testFriends image {
-    padding: 20rpx;
-    width: 60rpx;
-    height: 60rpx;
-    border-radius: 50rpx;
-    background-color: #ffffff;
-}
-
-#restartTest text,#testFriends text {
-    display: block;
-    margin-top: 5rpx;
-    font-size: 30rpx;
-    line-height: 1em;
-}
 #viewMore {
     display: block;
     margin: 30rpx auto 0rpx;
@@ -432,4 +412,74 @@ button::after {
     0%,100% {
         opacity: 1;
     }
+}
+
+/*
+test button style
+*/
+
+#actions {
+    position: relative;
+    padding: 30rpx 80rpx 60rpx 20rpx;
+    overflow: hidden;
+}
+#reTest {
+    position: fixed;
+    width: 250rpx;
+    height: 65rpx;
+    left:30rpx;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.1);
+    background-color:#ffffff;
+    text-align: center;
+    border-top-left-radius: 30rpx;
+    border-bottom-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+}
+#TFriends{
+    position: fixed;
+    width:250rpx;
+    height: 65rpx;
+    right:30rpx;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.1);
+    background-color:#ffffff;
+    text-align: center;
+    border-top-left-radius: 30rpx;
+    border-bottom-left-radius: 30rpx;
+    border-top-right-radius: 30rpx;
+    border-bottom-right-radius: 30rpx;
+}
+#reTest image {
+    position: absolute;
+    left:25rpx;
+    top:15rpx;
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 40rpx;
+    background-color: #ffffff;
+}
+#TFriends image {
+    position: absolute;
+    left:25rpx;
+    top:15rpx;
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 40rpx;
+    background-color: #ffffff;
+}
+#reTest text {
+    position: absolute;
+    left: 80rpx;
+    line-height: 60rpx;
+    font-size: 30rpx;
+    color: #333333;
+    text-align: center;
+}
+#TFriends text {
+    position: absolute;
+    left:80rpx;
+    font-size:30rpx;
+    line-height: 60rpx;
+    color: #333333;
+    text-align: center;
 }
