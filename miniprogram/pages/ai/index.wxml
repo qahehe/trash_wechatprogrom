@@ -1,6 +1,5 @@
 <view id="header">
     <view bindtap="showChooseCity" id="currentCity" style="{{hideCurrentCity?'opacity: 0;':''}}">
-        <!--<image id="location" src="{{images.location}}"></image>-->
         <text id="city">{{config.cities[city].name}}</text>
     </view>
     <view bindtap="startSearch" id="fakeSearch" style="{{fakeSearchLeft}}">
@@ -54,7 +53,6 @@
 <view bindtap="closeOverlay" id="overlay" style="display: {{showChooseCity?'block':'none'}};"></view>
 <view id="chooseCity" style="display: {{showChooseCity?'block':'none'}};">
     <view id="chooseCityCurrent">
-        <!--<image src="{{images.location}}"></image> -->
         <text id="cityitem">{{config.cities[city].name}}</text>
     </view>
     <scroll-view id="cities" scrollY="true">

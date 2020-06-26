@@ -1,6 +1,5 @@
 page {
   background-image: url("https://742d-t-5dlan-1302066156.tcb.qcloud.la/index_bg.jpg?sign=aa9a2277f5c132d69508527bb2bf5d24&t=1592989552");
-  /* background-size: cover; */
   background-size: 100% 100%;
 }
 
@@ -21,15 +20,6 @@ page {
     top: 20rpx;
     height: 80rpx;
 }
-
-/* 可能要删除的 location图标的样式
- #location {
-    margin: 0rpx 0rpx 0rpx 0rpx;
-    width: 24rpx;
-    height: 32rpx;
-} */
-
-
 /*
     city 位置样式
 */
@@ -325,44 +315,6 @@ page {
     background-color: rgba(0,0,0,0.5);
     z-index: 2002;
 }
-
-#qrDownloadWrapper {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 600rpx;
-    height: 775rpx;
-    border-radius: 10px;
-    background-color: #ffffff;
-    transform: translate(-50%,-50%);
-    z-index: 2003;
-    animation: pop 250ms;
-}
-
-#qrDownloadWrapper>image {
-    display: block;
-    margin-left: 75rpx;
-    margin-top: 75rpx;
-    width: 450rpx;
-    height: 450rpx;
-}
-
-#qrDownloadWrapper button {
-    margin-left: 75rpx;
-    margin-top: 75rpx;
-    width: 450rpx;
-    height: 100rpx;
-    border-radius: 50rpx;
-    background-color: #64a814;
-    color: #ffffff;
-    font-size: 32rpx;
-    line-height: 100rpx;
-}
-
-#qrDownloadWrapper button::after {
-    border: none;
-}
-
 #hideQr {
     position: absolute;
     right: 20rpx;

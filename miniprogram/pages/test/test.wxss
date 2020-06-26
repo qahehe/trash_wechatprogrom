@@ -305,23 +305,6 @@ button::after {
     font-size: 30rpx;
     line-height: 1em;
 }
-
-#testBottom {
-    position: absolute;
-    left: 0rpx;
-    bottom: 0rpx;
-    width: 100%;
-    z-index: 200;
-}
-
-#adWrapper {
-    margin: 20rpx 20rpx 20rpx 20rpx;
-    width: 710rpx;
-    border-radius: 20rpx;
-    z-index: 200;
-    overflow: hidden;
-}
-
 #viewMore {
     display: block;
     margin: 30rpx auto 0rpx;

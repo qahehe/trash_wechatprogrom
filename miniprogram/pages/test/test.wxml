@@ -45,9 +45,4 @@
             </view>
         </view>
     </view>
-    <!--<view id="testBottom">
-        <view id="adWrapper">
-            <ad bindclose="closeAd" binderror="withoutAd" bindload="withAd" unitId="adunit-7e79fb8e9ceabea0"></ad>
-        </view>
-    </view>-->
 </view>

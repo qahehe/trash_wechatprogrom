@@ -23,9 +23,3 @@
         </view>
     </scroll-view>
 </view>
-
-<!--<button class="share index" openType="share" >
-    <image src="/images/share.png"></image>
-    <text>分享</text>
-</button>
--->

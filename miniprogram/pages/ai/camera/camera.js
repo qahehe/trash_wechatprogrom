@@ -1,8 +1,7 @@
 var md5 = require('../../../utils/md5.js')
 var http = require('../../../utils/http.js')
 var util = require('../../../utils/util.js')
-// import { Utilaa } from 'util'
-// var u = require('underscore')
+
 Page({
   data:{
     accessToken:"",

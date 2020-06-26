@@ -1,9 +1,5 @@
 <!--miniprogram/pages/contact/updatelog/updatelog.wxml-->
 <view class="container">
-  <view class="header">
-    <view class="black-cover"></view>
-    <image class="logo" src="/images/cover_test.png"></image>
-  </view>
   <view class="content">
     <view class="version">
       <view class="version-title">
