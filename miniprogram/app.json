@@ -2,7 +2,6 @@
   "pages": [
     "pages/ai/index",
     "pages/ai/search",
-    "pages/ai/camera/camera",
     "pages/result/list",
     "pages/result/commit",
     "pages/test/test",

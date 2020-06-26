@@ -65,7 +65,7 @@ Page({
     },
     onShareAppMessage: function(t) {
         return {
-            title: "全国垃圾分类统一考试",
+            title: "垃圾分类测试",
             path: "/pages/test/test",
             imageUrl: "../../images/cover_test.png"
         };

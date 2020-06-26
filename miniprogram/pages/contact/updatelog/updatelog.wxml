@@ -7,9 +7,6 @@
         <text class="version-text">{{version}}</text>
         <text class="version-text">公测</text>
       </view>
-      <view>
-        <text class="version-log-link update-log">开发日志</text>
-      </view>
     </view>
     <view class="log-list">
       <view class="describe">

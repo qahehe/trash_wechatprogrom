@@ -6,7 +6,7 @@
   </view>
   <view class="text">
     <view>邮箱地址:{{address}}</view>
-    <view>邮箱地址：{{number}}</view>
+    <view>{{number}}</view>
     <view>咨询问题请扫描上面的二维码</view>
     <view>或者发送邮件给我们，谢谢合作！</view>
   </view>
