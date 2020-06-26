@@ -40,15 +40,15 @@
 <!-- 三个桌面按钮的样式和html-->
 <button class="share index" openType="share">
     <image src="/images/share.png"></image>
-    <text>  分享</text>
+    <text space="emsp"> 分享</text>
 </button>
 <button class="btn1 index"  bindtap="onBindCamera">
     <image src="/images/camera-green.png"></image>
-    <text>  拍照</text>
+    <text space="emsp"> 拍照</text>
 </button>
 <button class="btn2 index"  bindtap="onBindAlbum">
     <image src="/images/album.png"></image>
-    <text>  相册</text>
+    <text space="emsp"> 相册</text>
 </button>
 
 <view bindtap="closeOverlay" id="overlay" style="display: {{showChooseCity?'block':'none'}};"></view>

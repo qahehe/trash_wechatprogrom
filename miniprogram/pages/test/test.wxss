@@ -141,8 +141,6 @@ button::after {
     transform: translateY(-50%);
 }
 
-.quiz-option text.en {
-}
 
 #quizResultWrapper {
     position: absolute;

@@ -3,7 +3,7 @@
   <view class="img-view">
     <image class="img" src="/images/no-result.png"> </image>
   </view>
-  <text class="txt">谢谢您完善垃圾样本，提交库未收藏的垃圾名称，将会帮助更多的其他人,垃圾分类感谢你的贡献</text>
+  <text class="txt">感谢您提交库中未收藏的垃圾样本，为垃圾分类做出贡献</text>
   <view class="cu-form-group margin-top">
     <view class="title">垃圾名称</view>
     <input name="keyword" placeholder="请输入名称" value="{{keyword}}"></input>

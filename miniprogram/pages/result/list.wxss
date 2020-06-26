@@ -1,3 +1,6 @@
+page{
+  background:#FBFBFB
+}
 .bg-darkGray {
 	background-color:  #FBFBFB;
 	color:#ffffff;
@@ -41,11 +44,11 @@
   margin-top: 250rpx;
 }
 .no-img{
-  width: 300rpx;
-  height: 300rpx;
+  width: 350rpx;
+  height: 350rpx;
 }
 .content{
-  color:#00cc77;
+  color:#000000;
   font-size:30rpx;
   font-weight: bold; 
   margin-top: 30rpx;
@@ -56,9 +59,10 @@
   flex-direction: row;
 }
 .btn-commit{
+  background-color: #FFFFFF;
   border-radius: 20rpx;
-  background-color:#00cc77;
-  color: white; 
+  border: 1px solid #eeeeee;
+  color:#000000; 
   margin:0 10rpx; 
   padding: 20rpx 80rpx;
 }
