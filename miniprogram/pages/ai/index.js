@@ -242,7 +242,7 @@ Page({
 
   onShareAppMessage: function() {
     return {
-      title: "智能垃圾垃圾",
+      title: "智能垃圾分类",
       imageUrl: "../../images/no-result.png",
       path: "pages/ai/index"
     }
