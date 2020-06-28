@@ -1,12 +1,22 @@
-# 云开发 quickstart
+# **分类宝ai垃圾分类**
 
-这是云开发的快速启动指引，其中演示了如何上手使用云开发的三大基础能力：
+<font size=5>**功能**</font>
 
-- 数据库：一个既可在小程序前端操作，也能在云函数中读写的 JSON 文档型数据库
-- 文件存储：在小程序前端直接上传/下载云端文件，在云开发控制台可视化管理
-- 云函数：在云端运行的代码，微信私有协议天然鉴权，开发者只需编写业务逻辑代码
+1. 文字搜索识别
+2. 拍照识别
+3. 相册识别
+4. 分类指南
+5. 答题测试
 
-## 参考文档
+<font size=5>**运行**</font>
 
-- [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
+1. 小程序appid，把文件project.config.json->appid 替换为自己的id。
+2. 云开发数据库中创建表commit,sort，product，把sort.json 和product.csv 导入云数据库，并且配置读写权限。
+3. 百度ai的id，把cloudfunctions->baiduAccessToken->index->apiKey和secretKey 替换自己的API Key 和 Secret Key。
+4. 上传部署云函数
+
+<font size=5>**扫码体验**</font>
+
+![30aad1f0e7bac98c3294183a58b0ace.jpg](https://p.sda1.dev/0/01d8b3d74add3010c37bd3b5c08025b7/30aad1f0e7bac98c3294183a58b0ace.jpg)
+
 
