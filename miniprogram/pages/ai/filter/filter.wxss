@@ -15,6 +15,6 @@
   margin-right: 30rpx;
 }
 .item-ji {
-  background-color:  #f6f6f6;
+  background-color:  #FBFBFB;
 	color:black;
 }

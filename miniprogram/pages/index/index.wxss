@@ -215,11 +215,10 @@ image {
 
 .section-icon {
     display: block;
-    vertical-align: top;
     margin: 0px auto;
-    width: 360rpx;
-    height: 360rpx;
-    border-radius: 5px;
+    width: 250rpx;
+    height: 250rpx;
+    border-radius: 10px;
 }
 
 .cat-intro {
@@ -284,43 +283,6 @@ image {
     z-index: 2002;
 }
 
-#qrDownloadWrapper {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    width: 600rpx;
-    height: 775rpx;
-    border-radius: 10px;
-    background-color: #ffffff;
-    transform: translate(-50%,-50%);
-    z-index: 2003;
-    animation: pop 250ms;
-}
-
-#qrDownloadWrapper>image {
-    display: block;
-    margin-left: 75rpx;
-    margin-top: 75rpx;
-    width: 450rpx;
-    height: 450rpx;
-}
-
-#qrDownloadWrapper button {
-    margin-left: 75rpx;
-    margin-top: 75rpx;
-    width: 450rpx;
-    height: 100rpx;
-    border-radius: 50rpx;
-    background-color: #64a814;
-    color: #ffffff;
-    font-size: 32rpx;
-    line-height: 100rpx;
-}
-
-#qrDownloadWrapper button::after {
-    border: none;
-}
-
 #hideQr {
     position: absolute;
     right: 20rpx;
@@ -346,16 +308,6 @@ image {
 
 #hideQr::after {
     transform: translate(-50%,-50%) rotate(-45deg);
-}
-
-#adWrapper {
-    position: fixed;
-    left: 150rpx;
-    bottom: 0rpx;
-    width: 600rpx;
-    height: 200rpx;
-    background-color: transparent;
-    z-index: 200;
 }
 
 #overlay {

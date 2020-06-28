@@ -1,47 +1,23 @@
-// miniprogram/pages/contact/contact.js
+// miniprogram/pages/contact/updatelog/updatelog.js
+var app=getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    version: '',
+    year:''
   },
-  onShareAppMessage: function(t) {
-    return {
-        title: "智能垃圾分类",
-        path: "/pages/index/index"
-    };
-},
-  
-   /**
-   * 用户点击右上角分享
+
+  /**
+   * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.showShareMenu({
-      withShareTicket: !0
-    });
-  },
-
-  onaboutus(){
-      wx.navigateTo({
-        url: '/pages/contact/aboutus'
-      })
-  },
-  onquestion(){
-    wx.navigateTo({
-      url: '/pages/contact/question/question'
-    })
-  },
-  onmorelog(){
-    wx.navigateTo({
-      url: '/pages/contact/updatelog/updatelog'
-    })
-  },
-  onupload(){
-    wx.navigateTo({
-      url: '/pages/contact/handin/handin'
-    })
+    this.setData({
+            version: "V2.0.0",
+            year: new Date().getFullYear()
+          });
   },
 
   /**
@@ -83,6 +59,13 @@ Page({
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
 
   }
 })

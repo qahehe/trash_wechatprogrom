@@ -1,9 +1,13 @@
 <!--miniprogram/pages/contact/aboutus.wxml-->
 <view>
   <view>
-    <image src="/images/qrchen.png"></image>
+    <view class="texttitle">欢迎联系开发者</view>
+    <image class="imagesize" src="/images/chlcode.jpg"></image>
   </view>
-  <view>邮箱地址:{{address}}</view>
-    <view>微信号：{{number}}</view>
-    <view>有问题请咨询上述联系人</view>
+  <view class="text">
+    <view>邮箱地址:{{address}}</view>
+    <view>{{number}}</view>
+    <view>咨询问题请扫描上面的二维码</view>
+    <view>或者发送邮件给我们，谢谢合作！</view>
+  </view>
 </view>

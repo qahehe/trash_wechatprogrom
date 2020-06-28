@@ -2,19 +2,20 @@
   "pages": [
     "pages/ai/index",
     "pages/ai/search",
-    "pages/ai/camera/camera",
     "pages/result/list",
     "pages/result/commit",
     "pages/test/test",
     "pages/index/index",
     "pages/ai/filter/filter",
     "pages/contact/contact",
-    "pages/contact/aboutus"
+    "pages/contact/aboutus",
+    "pages/contact/updatelog/updatelog",
+    "pages/contact/handin/handin"
   ],
   "window": {
-    "backgroundColor": "#FFFFFF",
+    "backgroundColor": "#FBFBFB",
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#FBFBFB",
     "navigationBarTitleText": "智能垃圾分类",
     "navigationBarTextStyle": "black"
   },
@@ -42,9 +43,9 @@
       },
       {
         "pagePath": "pages/contact/contact",
-        "text": "设置",
-        "iconPath": "images/setting.png",
-        "selectedIconPath": "images/setting-active.png"
+        "text": "更多",
+        "iconPath": "images/check.png",
+        "selectedIconPath": "images/check-active.png"
       }
     ]
   },

@@ -1,6 +1,5 @@
 <view id="header">
     <view bindtap="showChooseCity" id="currentCity" style="{{hideCurrentCity?'opacity: 0;':''}}">
-        <!--<image id="location" src="{{images.location}}"></image>-->
         <text id="city">{{config.cities[city].name}}</text>
     </view>
     <view bindtap="startSearch" id="fakeSearch" style="{{fakeSearchLeft}}">
@@ -12,26 +11,9 @@
     </view>
 </view>
 <view class='ai-view'>
-  <image src='/images/paizhao.png' class='ai-paizhao' bindtap='onBindCamera' />
-  <text class='tip'>自动识别</text>
 
-</view>
-<view class="box" wx:if="{{SHOW_TOP}}">
-  <view class='arrow'></view>
-  <view class='body' bindtap='showModal'>
-    <text>点击「添加到我的小程序」</text>
-  </view>
-</view>
-
-<button class="share index" openType="share" style="display: block;">
-    <image src="/images/share.png"></image>
-    <text>分享</text>
-</button>
 <!-- 从相册导入的xml代码，可修改-->
-<button class="cs index"  bindtap="onBindAlbum">
-    <image src="/images/camera-active.png"></image>
-    <text>从相册导入</text>
-</button>
+
 <view class="cu-modal {{isShow?'show':''}}" bindtap="hideModal">
   <view class="cu-dialog" catchtap>
     <radio-group class="block" bindchange="radioChange">
@@ -47,16 +29,30 @@
   </view>
 </view>
 
-
-<!--<button class="cs index" bindtap="showZsm">
-    <image src="/images/qr_b.png"></image>
-    <text>打赏</text>
-</button> -->
+</view>
+<view class="box" wx:if="{{SHOW_TOP}}">
+  <view class='arrow'></view>
+  <view class='body' bindtap='showModal'>
+    <text>点击「添加到我的小程序」</text>
+  </view>
+</view>
+<!-- 三个桌面按钮的样式和html-->
+<button class="share index" openType="share">
+    <image src="/images/share.png"></image>
+    <text space="emsp"> 分享</text>
+</button>
+<button class="btn1 index"  bindtap="onBindCamera">
+    <image src="/images/camera-green.png"></image>
+    <text space="emsp"> 拍照</text>
+</button>
+<button class="btn2 index"  bindtap="onBindAlbum">
+    <image src="/images/album.png"></image>
+    <text space="emsp"> 相册</text>
+</button>
 
 <view bindtap="closeOverlay" id="overlay" style="display: {{showChooseCity?'block':'none'}};"></view>
 <view id="chooseCity" style="display: {{showChooseCity?'block':'none'}};">
     <view id="chooseCityCurrent">
-        <!--<image src="{{images.location}}"></image> -->
         <text id="cityitem">{{config.cities[city].name}}</text>
     </view>
     <scroll-view id="cities" scrollY="true">

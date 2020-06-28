@@ -1,0 +1,39 @@
+<!--miniprogram/pages/contact/updatelog/updatelog.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="version">
+      <view class="version-title">
+        <text class="title-name">智能垃圾分类</text>
+        <text class="version-text">{{version}}</text>
+        <text class="version-text">公测</text>
+      </view>
+    </view>
+    <view class="log-list">
+      <view class="describe">
+        <view class="desc-title">
+          <text class="desc-v">v2.0.0 公测版</text>
+          <text class="desc-time">2020.6.28</text>
+        </view>
+        <text class="desc-content">修复BUG</text>
+        <view class="desc-list">
+          <text class="desc-list-item">修复问题反馈，联系我们等更多相关功能</text>
+          <text class="desc-list-item">修改各种UI格式和图片资源优化</text>
+        </view>
+        <text class="desc-content">优化完善</text>
+        <view class="desc-list">
+          <text class="desc-list-item">添加手动上传垃圾名称功能，修改开发者联系方式</text>
+          <text class="desc-list-item">添加分享小程序功能</text>
+          <text class="desc-list-item">添加图像识别（从相机和相册）功能</text>
+          <text class="desc-list-item">添加垃圾分类测试功能</text>
+          <text class="desc-list-item">紧跟政策，修改指南中的数据定义和相关资料，添加点击指南对应图片查看对应垃圾数据的功能</text>
+          <text class="desc-list-item">删除冗余数据，保持数据清晰可信</text>
+          <text class="desc-list-item">优化数据库检索机制和搜索功能</text>
+        </view>
+      </view>
+    <view class="footer">
+      <text>专业团队</text>
+      <text>Copyright @ {{year}} All Rights Reserved</text>
+    </view>
+  </view>
+</view>
+</view>

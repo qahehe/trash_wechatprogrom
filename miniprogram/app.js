@@ -7,7 +7,6 @@ App({
     } else {
       wx.cloud.init({
         traceUser: true,
-        env:"trash-t2q0q"
         //云开发环境
       })
     }

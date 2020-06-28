@@ -1,3 +1,4 @@
+/* miniprogram/pages/contact/handin/handin.wxss */
 page{
   height: 100%;
 }
@@ -14,7 +15,6 @@ page{
 }
 .txt{
   font-size: 36rpx;
-  color: #1C1C1C;
   margin: 40rpx 0 30rpx 0;
 }
 .img-view {

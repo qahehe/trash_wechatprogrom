@@ -79,36 +79,14 @@ Page({
       this.data.page = 0;
       this.updateData();
     },
-    /*showZsm: function(t) {
-      wx.previewImage({
-        current: "https://6465-dev-oto5o-1257020492.tcb.qcloud.la/zsm.jpg?sign=630ef20ce52101ba29f99c6bc1934835&t=1576025106",
-        urls: ["https://6465-dev-oto5o-1257020492.tcb.qcloud.la/zsm.jpg?sign=630ef20ce52101ba29f99c6bc1934835&t=1576025106"],
-      })
-    },*/
+    //点击图片进入数据样单
     onClick:function(e){
       console.log(JSON.stringify(e))
       var indexClick=parseInt(this.data.secId) + parseInt(1)
-      //this.data.secId = e.currentTarget.dataset.index
-      //console.log(this.data.secId)
-      //var index =this.data.secId
-      //console.log(index)
-      /*switch (index){
-        case 0:
-          indexClick = 3
-          break;
-         case 1:
-          indexClick = 4
-          break;
-        case 2:
-          indexClick = 1
-          break;
-        case 3:
-          indexClick = 2
-          break;
-      }*/
       console.log(indexClick)
+      var citys=this.data.city
       wx.navigateTo({
-        url: '/pages/ai/filter/filter?type=' + indexClick
+        url: '/pages/ai/filter/filter?type='+indexClick.toString()+"&city="+citys
       })
     },
     updateData: function() {
@@ -129,68 +107,6 @@ Page({
       }
       wx.hideLoading()
       return
-      /*var that = this
-      if (this.data.page == 0) {
-        this.data.datas = []
-        var localData = wx.getStorageSync("localData_" + this.data.type);
-        if(localData == "") {
-          var datas = db.collection('product').skip(this.data.page * this.data.MAX_LIMIT).limit(this.data.MAX_LIMIT).where({
-            sortId: parseInt(that.data.type)
-          }).get({
-            success: function (res) {
-              // console.log(res.data)
-              wx.hideLoading()
-              that.data.page = that.data.page + 1
-              for (var i = 0; i < res.data.length; i++) {
-                that.data.datas.push(res.data[i])
-              }
-              console.log(that.data.datas)
-              wx.setStorageSync("localData_" + that.data.type, that.data.datas);
-              that.setData({
-                data: that.data.datas
-              })
-            },
-            fail: res => {
-              wx.hideLoading()
-              wx.showToast({
-                title: '数据加载失败',
-                icon: "none"
-              })
-            }
-          })
-        } else {
-          wx.hideLoading()
-          that.data.page = that.data.page + 1
-          this.data.datas = localData;
-          this.setData({
-            data: this.data.datas
-          })
-        }
-      } else {
-        var datas = db.collection('product').skip(this.data.page * this.data.MAX_LIMIT).limit(this.data.MAX_LIMIT).where({
-          sortId: parseInt(that.data.type)
-        }).get({
-          success: function (res) {
-            // console.log(res.data)
-            wx.hideLoading()
-            that.data.page = that.data.page + 1
-            for (var i = 0; i < res.data.length; i++) {
-              that.data.datas.push(res.data[i])
-            }
-            // console.log(that.data.datas)
-            that.setData({
-              data: that.data.datas
-            })
-          },
-          fail: res => {
-            wx.hideLoading()
-            wx.showToast({
-              title: '数据加载失败',
-              icon: "none"
-            })
-          }
-        })
-      }*/
     },
     loadMoreItems: function() {
       this.updateData()

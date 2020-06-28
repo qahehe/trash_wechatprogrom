@@ -2,7 +2,7 @@
 <view id="wrapper">
     <view id="quizzes">
         <view class="quiz{{currentQ===quizIndex?' active':currentQ>quizIndex?' out':' in'}}" wx:for="{{quizzes}}" wx:for-index="quizIndex" wx:for-item="quiz">
-            <view class="quiz-index" style="margin-top:10px;">{{quizIndex<9?'0'+(quizIndex+1):quizIndex+1}} <text>/ {{totalQuizzes}}</text>
+            <view class="quiz-index" style="text-align:center;margin-top:10px;">{{quizIndex<9?'0'+(quizIndex+1):quizIndex+1}} <text>/ {{totalQuizzes}}</text>
             </view>
             <text class="quiz-q" src="{{quiz.q}}">{{quiz.n}}</text>
             <view class="quiz-options">
@@ -33,11 +33,11 @@
                     </view>
                 </view>
                 <view id="actions">
-                    <view bindtap="restart" id="restartTest">
+                    <view bindtap="restart" id="reTest">
                         <image src="{{images.restart}}"></image>
                         <text>{{tipInfo.testAgain}}</text>
                     </view>
-                    <button bindtap="share" id="testFriends" openType="share">
+                    <button bindtap="share" id="TFriends" openType="share">
                         <image src="{{images.share}}"></image>
                         <text>{{tipInfo.testFriends}}</text>
                     </button>
@@ -45,9 +45,4 @@
             </view>
         </view>
     </view>
-    <!--<view id="testBottom">
-        <view id="adWrapper">
-            <ad bindclose="closeAd" binderror="withoutAd" bindload="withAd" unitId="adunit-7e79fb8e9ceabea0"></ad>
-        </view>
-    </view>-->
 </view>
