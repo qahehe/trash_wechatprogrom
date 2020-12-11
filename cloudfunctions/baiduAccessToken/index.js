@@ -4,9 +4,10 @@ const rq = require('request-promise')
  * 获取百度ai AccessToken
  */
 exports.main = async(event, context) => {
-  let clientId = 'ZNXrHWv2gqBCAdxj3VGEoZqv',
-  grantType = 'client_credentials',
-  clientSecret = 'vXnzKYXKNIC0uPX3wnKdP8HiiGn1yLTc',
+  //填写自己的百度云ai clietn ID和密钥
+  let clientId = '',
+  grantType = '',
+  clientSecret = '',
   url = `https://aip.baidubce.com/oauth/2.0/token`
 
   return new Promise(async(resolve, reject) => {
